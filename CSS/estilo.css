@@ -151,11 +151,16 @@ footer {
 @media screen and (max-width: 600px) {
   #homeMain {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    margin: 0px 5%;
+    align-self: center; }
     #homeMain .mainTitulo {
       margin-left: 0px; }
     #homeMain .homeMainText {
-      order: 2; } }
+      order: 2; }
+      #homeMain .homeMainText p {
+        text-align: center;
+        width: 100%; } }
 
 /*Estilos particulares para la página "Plantel"*/
 .tablaPlantel {

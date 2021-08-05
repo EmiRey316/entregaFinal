@@ -56,6 +56,8 @@
     #homeMain {
         display: flex;
         flex-direction: column;
+        margin: 0px 5%;
+        align-self: center;
 
         .mainTitulo {
             margin-left: 0px;
@@ -63,6 +65,11 @@
 
         .homeMainText {
             order: 2;
+
+            p {
+                text-align: center;
+                width: 100%;
+            }
         }
     }
 }
