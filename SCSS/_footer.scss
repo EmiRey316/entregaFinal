@@ -1,59 +1,76 @@
-/*Estilos para el footer del sitio*/
 footer {
-    background: linear-gradient($negro, lighten($negro, 10%));
-    color: lightgrey;
+    background: linear-gradient($gris, darken($gris, 40%));
+    color: $negro;
     font-family: 'Roboto', sans-serif;
-    width: 100%;
     margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 30px;
+    grid-template-areas: "Contactos Redes"
+                            "Copy Copy";
+    justify-items: center;
 
-.footerContactos {
-    width: 30%;
-    margin-left: 3%;
-    grid-area: Contacto;
-
-    /*Estilo para el título del contenedor de contactos*/
+    /*Estilo para los títulos del footer*/
     h2 {
         font-size: 24px;
         font-weight: bold;
-        margin: 4% 0px;
+        text-align: center;
+    }
+
+    p {
+        color: $negro;
+        margin: 0px;
+        grid-area: Copy;
     }
 }
 
-/*Estilo del contenedor con las redes*/
+.footerContactos {
+    grid-area: Contactos;
+    width: 100%;
+
+    /*Clase para dar estilo al listado de contactos*/
+    .contactosListado {
+        font-style: italic;
+        padding-left: 20%;
+    }
+}
+
 .footerRedes {
     grid-area: Redes;
-    margin-right: 30px;
+    width: 100%;
     display: flex;
-    width: 30%;
-    justify-content: space-evenly;
+    flex-direction: column;
+    row-gap: 10%;
+    align-items: center;
+
+    .footerRedesIconos {
+        display: flex;
+        width: 80%;
+        justify-content: space-evenly;
+
+        .footerRedesImg {
+            width: 36px;
+            height: auto;
+        }
+    }
 }
 
-.footerRedesImg {
-    width: 36px;
-    height: auto;
-}
 
-/*Clase para dar estilo al listado de contactos*/
-.contactosListado {
-    font-style: italic;
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $pantallaCelular) {
     footer {
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
-    .footerContactos, .footerRedes {
+    .footerContactos, .footerRedes, p {
         width: 80%;
         text-align: center;
-        margin: 0px 0px 25px 0px;
+        padding-bottom: 20px;
     }
 
     .contactosListado {
-        padding: 0px;
+        padding-left: 0px !important;
     }
 }

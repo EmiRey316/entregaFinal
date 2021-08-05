@@ -38,7 +38,7 @@
     grid-area: TextoSecundario;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $pantallaCelular) {
     #polamaluMain {
         display: flex;
         flex-direction: column;

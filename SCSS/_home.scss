@@ -41,7 +41,7 @@
 
 
 /*Media Query para tablets y móviles en horizontal*/
-@media screen and (max-width: 992px) {
+@media screen and (max-width: $pantallaTablet) {
     #homeMain {
         grid-template-columns: 60% 40%;
         grid-template-areas: "Titulo Titulo"
@@ -52,12 +52,10 @@
 
 
 /*Media Query para dispositivos móviles*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $pantallaCelular) {
     #homeMain {
         display: flex;
         flex-direction: column;
-        margin: 0px 5%;
-        align-self: center;
 
         .mainTitulo {
             margin-left: 0px;

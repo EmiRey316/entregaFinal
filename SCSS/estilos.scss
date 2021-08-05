@@ -14,6 +14,7 @@
 /*Estilo general para el cuerpo de las páginas*/
 body {
     margin: 0px;
+    background-color: lighten($negro, 15%);
     line-height: 1.2;
     display: flex;
     flex-direction: column;
@@ -39,12 +40,12 @@ ul {
 .mainTitulo {
     font-family: 'Mate SC', serif;
     font-size: 36px;
-    color: black;
+    color: $amarillo;
     font-weight: bold;
     margin: 0px 0px 24px 5%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $pantallaCelular) {
     .mainTitulo {
         font-size: 28px;
     }
@@ -53,6 +54,6 @@ ul {
 /*Estilo para todos los párrafos de las páginas, que tendrán el mismo formato*/
 p {
     font-family: 'Roboto', sans-serif;
-    color: #000;
+    color: white;
     margin: 16px 0px;
 }

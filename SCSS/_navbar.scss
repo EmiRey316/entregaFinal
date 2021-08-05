@@ -1,6 +1,7 @@
 /*Estilos para el menú superior o navegador del sitio*/
 header {
-    background: linear-gradient(0deg, $negro 0%, $amarillo 20%);
+    background-color: $amarillo;
+    border-bottom: solid 3px $gris;
     margin-bottom: 50px;
 }
 
