@@ -80,7 +80,7 @@ footer {
   /*Clase para dar estilo al listado de contactos*/ }
   .footerContactos .contactosListado {
     font-style: italic;
-    padding-left: 20%; }
+    padding-left: 18vw; }
 
 .footerRedes {
   grid-area: Redes;
@@ -306,10 +306,14 @@ footer {
     row-gap: 15px;
     margin-bottom: 50px; }
     .galeriaImagenes img, .galeriaVideos img, .galeriaImagenes .contenedorVideo, .galeriaVideos .contenedorVideo, .galeriaVideos img, .galeriaVideos .contenedorVideo {
-      max-width: 85%;
+      width: 85%;
       align-self: center; }
   #galeriaMain .mainTitulo {
-    padding-left: 15%; } }
+    padding-left: 15%; }
+  .modal-content {
+    /*Estilo para que la imagen ocupe el 100% del ancho del modal al hacer zoom.*/ }
+    .modal-content img {
+      width: 100%; } }
 
 /*Estilos particulares para la página "contacto"*/
 #contactoMain {

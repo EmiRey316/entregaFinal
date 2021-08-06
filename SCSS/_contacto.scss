@@ -1,6 +1,6 @@
 /*Estilos particulares para la página "contacto"*/
 #contactoMain {
-    color: $negro;
+    color: $colorSecundario;
     display: flex;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
@@ -11,7 +11,7 @@
 
     /*Estilo particular para el form de esta página*/
     form {
-        background-color: $gris;
+        background-color: $colorComplementario;
         padding: 20px;
         border-radius: 10px;
 

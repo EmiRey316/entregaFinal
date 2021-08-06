@@ -75,7 +75,7 @@
 
 
         img, .contenedorVideo {
-            max-width: 85%;
+            width: 85%;
             align-self: center;
         }
     }
@@ -83,6 +83,13 @@
     #galeriaMain {
         .mainTitulo {
             padding-left: 15%;
+        }
+    }
+
+    .modal-content{
+        /*Estilo para que la imagen ocupe el 100% del ancho del modal al hacer zoom.*/
+        img {
+            width: 100%;
         }
     }
 }

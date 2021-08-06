@@ -6,10 +6,10 @@
 }
 
 .tablaPlantel {
-    color: $negro;
+    color: $colorSecundario;
     width: 80%;
     border-collapse: collapse;
-    border: $negro solid 1.5px;
+    border: $colorSecundario solid 1.5px;
     margin-bottom: 50px;
     font-family: 'Roboto', sans-serif;
     background-color: white;
@@ -34,13 +34,13 @@
     /*Estilo para la primer columna de cada tabla*/
     td:first-child, th:first-child {
         font-weight: bold;
-        border-right: $negro solid 0.5px;
+        border-right: $colorSecundario solid 0.5px;
     }
 
     /*Estilo para el título de cada tabla*/
     caption {
-        color: $negro;
-        border: $negro solid 2px;
+        color: $colorSecundario;
+        border: $colorSecundario solid 2px;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         border-bottom: none;
@@ -48,7 +48,7 @@
         font-weight: bold;
         text-align: left;
         padding: 8px 0px 8px 45px;
-        background-color: $amarillo;
+        background-color: $colorPrimario
     }
 }
 

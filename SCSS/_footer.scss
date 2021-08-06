@@ -1,6 +1,6 @@
 footer {
-    background: linear-gradient($gris, darken($gris, 40%));
-    color: $negro;
+    background: linear-gradient($colorComplementario, darken($colorComplementario, 40%));
+    color: $colorSecundario;
     font-family: 'Roboto', sans-serif;
     margin-top: 50px;
     padding-top: 20px;
@@ -19,7 +19,7 @@ footer {
     }
 
     p {
-        color: $negro;
+        color: $colorSecundario;
         margin: 0px;
         grid-area: Copy;
     }
@@ -32,7 +32,7 @@ footer {
     /*Clase para dar estilo al listado de contactos*/
     .contactosListado {
         font-style: italic;
-        padding-left: 20%;
+        padding-left: 18vw;
     }
 }
 
