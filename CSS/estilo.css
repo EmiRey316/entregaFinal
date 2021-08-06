@@ -323,6 +323,7 @@ footer {
   font-family: 'Roboto', sans-serif;
   /*Estilo particular para el form de esta página*/ }
   #contactoMain section {
+    width: 50%;
     padding-top: 40px; }
   #contactoMain form {
     background-color: #A5ACAF;
@@ -341,6 +342,7 @@ footer {
     width: 90%;
     align-self: center; }
     #contactoMain section {
+      width: 100%;
       padding-top: 0px; } }
 
 /*Estilo general para el cuerpo de las páginas*/
