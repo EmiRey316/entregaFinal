@@ -120,6 +120,8 @@ footer {
   align-items: center; }
   #homeMain .mainTitulo {
     grid-area: Titulo; }
+  #homeMain p::first-line {
+    padding-left: 10px; }
 
 #primerParrafoHome {
   grid-area: Parrafo1; }
@@ -160,7 +162,8 @@ footer {
       order: 2; }
       #homeMain .homeMainText p {
         text-align: center;
-        width: 100%; } }
+        width: 100%;
+        padding: 0px; } }
 
 /*Estilos particulares para la página "Plantel"*/
 .tablaPlantel {
@@ -247,7 +250,9 @@ footer {
     flex-direction: column;
     margin: 0px 5%;
     padding-right: 0%;
-    align-self: center; } }
+    align-self: center; }
+    #polamaluMain p {
+      width: 100%; } }
 
 /*Estilos particulares para la página "galería"*/
 /*Grilla para la parte de imagenes de la galería*/

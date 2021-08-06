@@ -13,6 +13,10 @@
     .mainTitulo {
         grid-area: Titulo;
     }
+
+    p::first-line {
+        padding-left: 10px;
+    }
 }
 
 #primerParrafoHome {
@@ -69,6 +73,7 @@
             p {
                 text-align: center;
                 width: 100%;
+                padding: 0px;
             }
         }
     }
